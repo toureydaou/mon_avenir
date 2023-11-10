@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine&family=Ubuntu:wght@300&display=swap');
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0px;
+    padding: 0px;
+}

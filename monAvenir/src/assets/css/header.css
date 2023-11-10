@@ -1,0 +1,109 @@
+.navbar.web {
+    display: none;
+}
+
+.navbar.mobile {
+
+    background-color: #fff;
+    height: 60px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px #dddddd;
+    transition: height 1s ease-out;
+}
+
+.navbar.mobile.expanded {
+    height: 100vh;
+    box-shadow: none;
+}
+
+.navbar.mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+
+}
+
+.navbar .navbar-logo {
+    height: 60px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-logo img {
+    height: 50px;
+    width: 55px;
+}
+
+.navbar.mobile .toggler svg {
+    height: 40px;
+    fill: rgb(0, 150, 0);
+}
+
+.navbar.mobile .navbar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: bisque;
+    height: 100%;
+    text-align: center;
+}
+
+.navbar.mobile .navbar-links a {
+    position: relative;
+    font-size: 22px;
+    color: rgb(0, 150, 0);
+    text-decoration: none;
+    margin: 32px 0px;
+    font-weight: 700;
+    transform: translateX(-125px);
+    transition: transform 0.5s ease-in 0.2s, color 0.6s ease-in;
+}
+
+.navbar.mobile .navbar-links a:nth-child(2) {
+    transform: translateX(-100px);
+}
+
+.navbar.mobile .navbar-links a:nth-child(3) {
+    transform: translateX(-75px);
+}
+
+.navbar.mobile .navbar-links a:nth-child(4) {
+    transform: translateX(-50px);
+}
+
+.navbar.mobile .navbar-links a:nth-child(5) {
+    transform: translateX(-25px);
+}
+
+
+.navbar.mobile.expanded .navbar-links a {
+
+    transform: translateX(0px);
+    opacity: 1;
+
+}
+
+.navbar.mobile .navbar-links a:hover {
+    color: rgb(255, 168, 61);
+}
+
+.navbar.mobile .navbar-links a::after {
+    position: absolute;
+    top: 105%;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background-color: rgb(0, 150, 0);
+    height: 0px;
+    width: 0%;
+    transition: width 0.7s ease-out;
+}
+
+.navbar.mobile .navbar-links a:hover::after {
+    background-color: rgb(0, 150, 0);
+    height: 2px;
+    width: 100%;
+}

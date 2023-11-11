@@ -14,10 +14,9 @@ const Apropos = () => {
         const handleScroll = () => {
             const revealImage = document.getElementById('revealImage');
 
-            console.log('scroll ', revealImage.getBoundingClientRect().left)
-            console.log('image ', revealImage.getBoundingClientRect().top)
+            //console.log('image ', revealImage.getBoundingClientRect().top)
 
-            if (revealImage && revealImage.getBoundingClientRect().top < 200) {
+            if (revealImage && revealImage.getBoundingClientRect().top < 550) {
                 setIsVisible(true)
             }
         };

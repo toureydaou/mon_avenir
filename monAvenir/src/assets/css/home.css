@@ -185,3 +185,27 @@
         transform: translateX(0%);
     }
 }
+
+.galerie {
+    padding: 32px 12px;
+}
+
+.galerie .photos {
+    margin: 64px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.galerie .photos img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.97);
+    transition: all 0.8s ease-in;
+}
+
+.galerie .photos img.display {
+    transform: scale(1);
+    opacity: 1;
+}
